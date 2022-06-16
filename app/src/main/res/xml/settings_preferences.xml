@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/toolbar_setting"></PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="STYLE"
+        android:layout="@layout/preference_category_title">
+        <ListPreference
+            android:defaultValue="e"
+            android:entries="@array/fontSize"
+            android:entryValues="@array/fontSize"
+            android:key="fontSize"
+            android:title="Font Size" />
+        <ListPreference
+            android:defaultValue="e"
+            android:entries="@array/fontSize"
+            android:entryValues="@array/fontSize"
+            android:key="fontSize"
+            android:title="Font Size"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="QUICK FEATURES"
+        android:layout="@layout/preference_category_title">
+        <Preference
+            android:title="Quick notes"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="REMINDERS"
+        android:layout="@layout/preference_category_title">
+        <SwitchPreference
+            android:title="High-priority reminders"
+            android:summary="Play sound even when Silent or DND mode is on"
+            android:key="priority"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="ADDITIONAL SETTINGS"
+        android:layout="@layout/preference_category_title">
+        <Preference
+            android:title="Deleted notes in the cloud"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="OTHER"
+        android:layout="@layout/preference_category_title">
+        <Preference
+            android:title="Privacy Policy"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
